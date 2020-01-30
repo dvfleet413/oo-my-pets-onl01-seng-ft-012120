@@ -28,6 +28,10 @@ class Owner
     Dog.new(name, self)
   end
   
+  def walk_dogs
+    dogs.each {|dog| dog.mood = "happy"}
+  end
+  
   def self.all
     @@all 
   end

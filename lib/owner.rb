@@ -46,6 +46,11 @@ class Owner
       cat.owner = nil 
     end
   end
+  
+  def list_pets
+    dogs.each {|dog| puts "#{dog}"}
+    cats.each {|cat| puts "#{cat}"}
+  end
       
   def self.all
     @@all 
